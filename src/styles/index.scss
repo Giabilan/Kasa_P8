@@ -1,0 +1,48 @@
+//  Variables + Delfault css
+@import "./settings";
+
+//  -----------------------Components-----------------------
+
+// Header
+@import "../components/Header/Header.scss";
+
+// Navigation
+@import "../components/Navigation/Navigation.scss";
+
+// Banner
+@import "../components/Banner/Banner.scss";
+
+// Properties
+@import "../components/Properties/Properties.scss";
+
+// Card
+@import "../components/Card/Card.scss";
+
+// Carousel
+@import "../components/Carousel/Carousel.scss";
+
+// Tag
+@import "../components/Tag/Tag.scss";
+
+// Rating
+@import "../components/Rating/Rating.scss";
+
+// Collapse
+@import "../components/Collapse/Collapse.scss";
+
+// Footer
+@import "../components/Footer/Footer.scss";
+
+//  -----------------------Pages-----------------------
+
+// Home
+@import "../pages/Home/Home.scss";
+
+// About
+@import "../pages/About/About.scss";
+
+// Housing
+@import "../pages/Housing/Housing.scss";
+
+// Error 404
+@import "../pages/Error404/Error404.scss";

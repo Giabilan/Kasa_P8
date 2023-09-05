@@ -1,0 +1,21 @@
+.containerCards {
+  background-color: $bg-color2;
+  margin: 35px auto;
+  padding: 35px 0;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+@media only screen and (max-width: 425px) {
+  .containerCards {
+    background-color: $bg-color1;
+    margin: 10px auto;
+    padding: 0;
+    width: 90%;
+    gap: 10px;
+  }
+}

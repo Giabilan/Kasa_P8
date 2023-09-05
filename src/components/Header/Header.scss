@@ -1,0 +1,39 @@
+.containerHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 68px;
+  margin: 50px auto;
+
+  svg {
+    fill: $color1;
+  }
+}
+
+// Responsive tablette
+@media only screen and (max-width: 768px) {
+  .containerHeader {
+     margin: 20px 10px 10px 10px;
+
+    svg {
+      width: 145px;
+      height: 46px;
+    }
+  }
+}
+
+// Responsive mobile
+@media only screen and (max-width: 425px) {
+  .containerHeader {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    svg {
+      width: 145px;
+      height: 46px;
+    }
+  }
+}
+
+

@@ -1,0 +1,37 @@
+.containerAbout {
+    min-height: calc(100vh - 259px);
+  max-width: 1240px;
+  margin: 0 auto;
+
+  .displayABout {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px auto 0 auto;
+  }
+}
+
+// Responsive Tablette
+@media only screen and (max-width: 768px) {
+  .containerAbout {
+    min-height: calc(100vh - 300px);
+    margin: 0 10px;
+
+    .displayABout {
+      width: 90%;
+    }
+  }
+}
+
+// Responsive tablette
+@media only screen and (max-width: 425px) {
+  .containerAbout {
+    min-height: calc(100vh - 229px);
+
+    .displayABout {
+      width: 90%;
+    }
+  }
+}

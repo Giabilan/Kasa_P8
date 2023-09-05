@@ -1,0 +1,52 @@
+.containerNavigation {
+  display: flex;
+  align-items: center;
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 250px;
+  }
+
+  .listLink {
+    color: $color1;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0em;
+    font-weight: 500;
+  }
+
+  .navActive {
+    text-decoration: underline;
+    color: $color1;
+  }
+}
+
+// Responsive tablette 
+@media (max-width: 768px) {
+  .containerNavigation {
+    .navigation {
+      width: 155px;
+    }
+
+    .listLink {
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// Responsive mobile
+@media (max-width: 425px) {
+  .containerNavigation {
+    .navigation {
+      width: 145px;
+    }
+
+    .listLink {
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+  }
+}

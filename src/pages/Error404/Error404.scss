@@ -1,0 +1,104 @@
+.containerError {
+  max-width: 1240px;
+  margin: 0 auto;
+
+  .allErrorText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color1;
+  }
+
+  .errorTitle {
+    font-size: 288px;
+    font-weight: 700;
+    line-height: 411px;
+    letter-spacing: 0em;
+    margin-top: 60px;
+  }
+
+  .errorText {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+    margin-top: 70px;
+    margin-bottom: 100px;
+  }
+
+  .errorLinkBtn {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    border: none;
+    background: none;
+    text-decoration: underline;
+    color: $color1;
+    margin-bottom: 145px;
+    cursor: pointer;
+  }
+}
+
+// Responsive Ipad
+@media only screen and (max-width: 768px) {
+  .containerError {
+    min-height: calc(100vh - 228px);
+    margin: 0 10px;
+
+    .allErrorText {
+      width: 100%;
+    margin: 0 auto;
+
+    }
+
+    .errorTitle {
+      font-size: 96px;
+      line-height: 137px;
+    }
+
+    .errorText {
+      display: flex;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      margin-top: 70px;
+      width: 219px;
+      height: 52px;
+    }
+
+    .errorLinkBtn {
+      font-size: 14px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+// Responsive mobile
+@media only screen and (max-width: 425px) {
+  .containerError {
+
+    .allErrorText {
+      width: 100%;
+    }
+
+    .errorTitle {
+      font-size: 96px;
+      line-height: 137px;
+    }
+
+    .errorText {
+      display: flex;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      margin-top: 100px;
+      width: 219px;
+      height: 52px;
+    }
+
+    .errorLinkBtn {
+      font-size: 14px;
+    }
+  }
+}

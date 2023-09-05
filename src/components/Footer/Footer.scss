@@ -1,0 +1,48 @@
+.containerFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 209px;
+  background-color: $bg-color3;
+  color: $color2;
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  svg {
+    width: 122px;
+    height: 40px;
+    fill: $color2;
+    margin-top: 35px;
+  }
+}
+
+// Responsive Tablette
+@media only screen and (max-width: 1150px) {
+  .containerFooter {
+    margin: 0 auto;
+  }
+}
+
+// Responsive mobile
+@media only screen and (max-width: 425px) {
+  .containerFooter {
+    width: 100%;
+    margin: 0;
+    svg {
+      margin-top: 50px;
+    }
+
+    p {
+      margin-bottom: 35px;
+      width: 30%;
+      text-align: center;
+      font-size: 12px;
+      line-height: 17px;
+    }
+  }
+}

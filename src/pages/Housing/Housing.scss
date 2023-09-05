@@ -1,0 +1,254 @@
+.housingPage {
+  min-height: calc(100vh - 259px);
+  max-width: 1240px;
+  margin: 0 auto;
+
+  .containerHouse {
+    color: $color1;
+
+    .infos {
+      display: flex;
+      flex-direction: row;
+      margin-top: 25px;
+
+      .location {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+
+        .houseTitle {
+          font-size: 36px;
+          font-weight: 500;
+        }
+
+        .place {
+          margin-top: 10px;
+          margin-bottom: 20px;
+          width: 100%;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          letter-spacing: 0em;
+        }
+
+        .tags {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 25px;
+        }
+      }
+
+      .host {
+        display: flex;
+        flex-direction: column;
+        align-items: self-end;
+        justify-content: flex-start;
+        width: 20%;
+
+        .containerHost {
+          display: flex;
+          flex-direction: row-reverse;
+
+          .hostPicture {
+            width: 64px;
+            height: 64px;
+            border-radius: 50px;
+          }
+
+          .hostName {
+            display: flex;
+            align-content: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            margin-right: 10px;
+            width: 55%;
+            word-wrap: break-word;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align: right;
+          }
+        }
+
+        .rating {
+          margin-top: 45px;
+        }
+      }
+    }
+  }
+
+  .housingCollapse {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+    .displayCollapse {
+      width: 47%;
+    }
+  }
+}
+
+// Responsive tablette
+@media only screen and (max-width: 768px) {
+  .housingPage {
+    margin: 0 10px;
+
+    .containerHouse {
+      margin: 0 10px;
+
+      .infos {
+        display: flex;
+        flex-direction: column;
+
+        .location {
+          width: 100%;
+
+          .houseTitle {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 0em;
+            margin-top: -10px;
+          }
+
+          .place {
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+          }
+
+          .tags {
+            flex-wrap: wrap;
+            margin: 10px 0 15px 0;
+          }
+        }
+
+        .host {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          align-content: center;
+          width: 100%;
+          margin-bottom: -10px;
+
+          .containerHost {
+            .hostPicture {
+              width: 52px;
+              height: 52px;
+            }
+            .hostName {
+              width: 40%;
+              font-size: 16px;
+              line-height: 17px;
+              top: 5px;
+              right: 60px;
+            }
+          }
+
+          .rating {
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .housingCollapse {
+        flex-direction: column;
+        margin-top: 30px;
+
+        .displayCollapse {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Responsive Mobile
+@media only screen and (max-width: 425px) {
+  .housingPage {
+    margin: 0 10px;
+
+    .containerHouse {
+      margin: 0 10px;
+
+      img {
+        height: 255px;
+      }
+
+      .infos {
+        display: flex;
+        flex-direction: column;
+
+        .location {
+          width: 100%;
+
+          .houseTitle {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 0em;
+            margin-top: -10px;
+          }
+
+          .place {
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+          }
+
+          .tags {
+            flex-wrap: wrap;
+            gap: 5px 0;
+            margin: 10px 0 15px 0;
+          }
+        }
+
+        .host {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          align-content: center;
+          width: 100%;
+          margin-bottom: -10px;
+
+          .containerHost {
+            .hostName {
+              width: 20%;
+              font-size: 12px;
+              line-height: 17px;
+              top: 5px;
+              right: 60px;
+            }
+
+            .hostPicture {
+              width: 32px;
+              height: 32px;
+            }
+          }
+
+          .rating {
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .housingCollapse {
+        flex-direction: column;
+        margin-top: 30px;
+
+        .displayCollapse {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
